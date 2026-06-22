@@ -42,24 +42,47 @@ export const services = [
 export const products = [
   {
     name: "Mental Mathletics",
-    category: "Learning product",
+    subtitle: "Cognitive Performance Tracker",
     description:
-      "A skill-building product that helps learners strengthen number sense, speed, and confidence through structured mental math practice.",
-    status: "Featured product",
+      "Mental Mathletics is a cognitive training platform designed to improve mental arithmetic, processing speed, accuracy, and problem-solving ability. Users can track performance over time, identify strengths and weaknesses across mathematical operations, and monitor long-term cognitive trends through personalized analytics.",
+    status: "Available Now",
+    href: "https://www.mentalmathletics.com/",
+    capabilities: [
+      "Mental arithmetic training",
+      "Performance tracking",
+      "Operation-level analytics",
+      "Long-term cognitive trends",
+    ],
   },
   {
-    name: "Operations Insight Kits",
-    category: "Consulting accelerators",
+    name: "Health & Wellness Intelligence Platform",
+    subtitle: "Machine Learning Powered Lifestyle Analytics",
     description:
-      "Reusable templates, scorecards, and diagnostic tools that help teams assess process maturity and prioritize improvements.",
-    status: "Coming soon",
+      "A health analytics platform that helps individuals understand how daily behaviors influence long-term outcomes. By combining nutrition, sleep, exercise, recovery, biometric, and lifestyle data, the platform uses machine learning to identify patterns associated with positive and negative health outcomes.",
+    status: "Coming Soon",
+    capabilities: [
+      "Lifestyle trend analysis",
+      "Sleep and recovery optimization",
+      "Nutrition impact tracking",
+      "Exercise effectiveness analysis",
+      "Personalized health insights",
+      "Predictive wellness recommendations",
+    ],
   },
   {
-    name: "Analytics Readiness Playbooks",
-    category: "Data enablement",
+    name: "MLB Analytics & Prediction Engine",
+    subtitle: "Baseball Intelligence Platform",
     description:
-      "Guided resources for organizations preparing their data, teams, and operating rhythms for advanced analytics.",
-    status: "Coming soon",
+      "An advanced baseball analytics platform that combines historical performance data, game trends, player metrics, and predictive modeling to generate actionable insights. The platform analyzes player performance, team trends, and game-level indicators to identify opportunities and forecast outcomes throughout the season.",
+    status: "In Development",
+    capabilities: [
+      "Team performance dashboards",
+      "Weekly trend analysis",
+      "Player performance evaluation",
+      "Predictive modeling",
+      "Historical comparisons",
+      "Interactive visualizations",
+    ],
   },
 ];
 
