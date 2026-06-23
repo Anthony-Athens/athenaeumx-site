@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import { SectionHeader } from "../components/section";
+import { createPageMetadata } from "../seo";
 import { ContactForm } from "./contact-form";
 
-export const metadata: Metadata = {
-  title: "Contact",
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact AthenaeumX",
   description:
-    "Contact AthenaeumX about process improvement, project management, analytics, data science, and machine learning consulting.",
-};
+    "Contact AthenaeumX for process improvement consulting, project management consulting, data analytics, data science, machine learning, AI strategy, Tableau consulting, and business intelligence support.",
+  path: "/contact",
+  keywords: [
+    "Contact AI Consultant",
+    "Contact Data Analytics Consultant",
+    "Contact Process Improvement Consultant",
+  ],
+});
 
 export default function ContactPage() {
   return (

@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionHeader } from "../components/section";
 import { products } from "../components/site-data";
+import { createPageMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Products",
+export const metadata: Metadata = createPageMetadata({
+  title: "Software Products",
   description:
-    "AthenaeumX software products and future platforms, featuring Mental Mathletics.",
-};
+    "Explore AthenaeumX software products and future platforms, including Mental Mathletics, health and wellness analytics, and machine learning powered prediction tools.",
+  path: "/products",
+  keywords: [
+    "Mental Mathletics",
+    "Healthcare Analytics",
+    "Machine Learning Products",
+    "Predictive Analytics Platform",
+  ],
+});
 
 export default function ProductsPage() {
   return (

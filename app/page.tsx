@@ -1,6 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { CTA, SectionHeader } from "./components/section";
 import { differentiators, services } from "./components/site-data";
+import { createPageMetadata } from "./seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Process Improvement, Data Analytics, and AI Consulting",
+  description:
+    "AthenaeumX provides process improvement consulting, project management consulting, data analytics, data science, machine learning, AI strategy, Tableau consulting, and business intelligence support.",
+  path: "/",
+  keywords: [
+    "Operations Consultant",
+    "AI Strategy Consultant",
+    "Operational Analytics",
+  ],
+});
 
 const metrics = [
   ["5", "core capabilities"],

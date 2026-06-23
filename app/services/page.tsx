@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import { CTA, SectionHeader } from "../components/section";
 import { services } from "../components/site-data";
+import { createPageMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Services",
+export const metadata: Metadata = createPageMetadata({
+  title: "Consulting Services",
   description:
-    "Consulting services for process improvement, project management, data analysis, data science, and machine learning.",
-};
+    "AthenaeumX consulting services include process improvement, project management, data analytics, data science, machine learning, AI strategy, Tableau consulting, operational excellence, and business intelligence.",
+  path: "/services",
+  keywords: [
+    "Process Improvement Consultant",
+    "Project Management Consultant",
+    "Tableau Consultant",
+    "Operational Excellence Consultant",
+  ],
+});
 
 export default function ServicesPage() {
   return (

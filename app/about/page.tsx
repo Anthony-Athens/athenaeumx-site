@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import { SectionHeader } from "../components/section";
 import { differentiators } from "../components/site-data";
+import { createPageMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "About",
+export const metadata: Metadata = createPageMetadata({
+  title: "About AthenaeumX",
   description:
-    "Learn about AthenaeumX and its practical approach to operations, analytics, and intelligent systems.",
-};
+    "Learn about AthenaeumX, a consulting firm focused on operational excellence, process improvement, project management, data analytics, data science, machine learning, and AI strategy.",
+  path: "/about",
+  keywords: [
+    "Operational Excellence",
+    "Business Intelligence",
+    "AI Consultant",
+    "Data Science Consultant",
+  ],
+});
 
 export default function AboutPage() {
   return (

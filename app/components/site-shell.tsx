@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { navigation } from "./site-data";
 
+const legalLinks = [
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Use" },
+];
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200 bg-white/92 backdrop-blur">
@@ -50,24 +55,40 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="border-t border-stone-200 bg-stone-950 text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr] lg:px-8">
-        <div>
-          <p className="text-lg font-semibold">AthenaeumX</p>
-          <p className="mt-3 max-w-xl text-sm leading-6 text-stone-300">
-            Operations improvement, project delivery, analytics, data science, and
-            machine learning for organizations ready to work with more clarity.
-          </p>
+      <div className="mx-auto max-w-7xl px-5 py-10 sm:px-6 lg:px-8">
+        <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <p className="text-lg font-semibold">AthenaeumX</p>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-stone-300">
+              Operations improvement, project delivery, analytics, data science, and
+              machine learning for organizations ready to work with more clarity.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3 md:justify-end">
+            {navigation.map((item) => (
+              <Link
+                className="rounded-md px-2 py-1 text-sm text-stone-300 hover:text-white"
+                href={item.href}
+                key={item.href}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-wrap gap-3 md:justify-end">
-          {navigation.map((item) => (
-            <Link
-              className="rounded-md px-2 py-1 text-sm text-stone-300 hover:text-white"
-              href={item.href}
-              key={item.href}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-stone-400 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 AthenaeumX. All rights reserved.</p>
+          <div className="flex flex-wrap gap-4">
+            {legalLinks.map((item) => (
+              <Link
+                className="text-stone-400 transition hover:text-white"
+                href={item.href}
+                key={item.href}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
