@@ -55,18 +55,18 @@ export const products = [
     ],
   },
   {
-    name: "Health & Wellness Intelligence Platform",
-    subtitle: "Machine Learning Powered Lifestyle Analytics",
+    name: "AX Vital",
+    subtitle: "Health & Wellness Intelligence Platform",
     description:
-      "A health analytics platform that helps individuals understand how daily behaviors influence long-term outcomes. By combining nutrition, sleep, exercise, recovery, biometric, and lifestyle data, the platform uses machine learning to identify patterns associated with positive and negative health outcomes.",
-    status: "Coming Soon",
+      "AX Vital is a health and wellness intelligence platform designed to help users understand how daily routines influence their health, performance, and overall well-being. The platform tracks lifestyle inputs such as nutrition, exercise, sleep, recovery, mood, and biometrics, then uses analytics and machine learning to identify patterns connected to positive and negative outcomes.",
+    status: "Beta Testing",
+    href: "https://www.axvital.com/",
     capabilities: [
-      "Lifestyle trend analysis",
-      "Sleep and recovery optimization",
-      "Nutrition impact tracking",
-      "Exercise effectiveness analysis",
-      "Personalized health insights",
-      "Predictive wellness recommendations",
+      "Track daily routines, habits, and wellness inputs",
+      "Monitor outcomes such as energy, mood, weight, recovery, and performance",
+      "Identify relationships between lifestyle behaviors and health trends",
+      "Use data-driven insights to support better decisions over time",
+      "Build a personalized view of what helps or hurts individual well-being",
     ],
   },
   {
