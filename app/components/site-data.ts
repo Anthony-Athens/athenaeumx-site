@@ -55,10 +55,10 @@ export const products = [
     ],
   },
   {
-    name: "AX Vital",
+    name: "AXVital",
     subtitle: "Health & Wellness Intelligence Platform",
     description:
-      "AX Vital is a health and wellness intelligence platform designed to help users understand how daily routines influence their health, performance, and overall well-being. The platform tracks lifestyle inputs such as nutrition, exercise, sleep, recovery, mood, and biometrics, then uses analytics and machine learning to identify patterns connected to positive and negative outcomes.",
+      "AXVital is a health and wellness intelligence platform designed to help users understand how daily routines influence their health, performance, and overall well-being. The platform tracks lifestyle inputs such as nutrition, exercise, sleep, recovery, mood, and biometrics, then uses analytics and machine learning to identify patterns connected to positive and negative outcomes.",
     status: "Beta Testing",
     href: "https://www.axvital.com/",
     capabilities: [
